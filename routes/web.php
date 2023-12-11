@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\dashborad;
+use App\Livewire\Inicio;
 use App\Livewire\ZonasComunes;
 use Illuminate\Support\Facades\Route;
 
@@ -25,4 +27,4 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

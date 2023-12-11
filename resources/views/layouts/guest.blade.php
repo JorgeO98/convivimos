@@ -22,9 +22,9 @@
                 </a>
             </div>
 
-{{--             <div class="w-full px-6 py-4 mt-2 mb-2 overflow-hidden bg-white shadow-md sm:max-w-md dark:bg-gray-800 sm:rounded-lg">
+            <div class="w-full px-6 py-4 mt-2 mb-2 overflow-hidden bg-white shadow-md sm:max-w-md dark:bg-gray-800 sm:rounded-lg">
                 {{ $slot }}
-            </div> --}}
+            </div>
         </div>
     </body>
 </html>
