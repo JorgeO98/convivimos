@@ -17,6 +17,14 @@
           <span class="text-sm font-medium">Zonas comunes</span>
         </a>
       </li>
+      <li>
+        <a href="{{route('objetos-comunes')}}"
+          class="flex flex-row items-center h-12 text-gray-500 transition-transform duration-200 ease-in transform hover:translate-x-2 hover:text-gray-800">
+          <span class="inline-flex items-center justify-center w-12 h-12 text-lg text-gray-400"><i
+              class="bx bx-home"></i></span>
+          <span class="text-sm font-medium">Objetos comunes</span>
+        </a>
+      </li>
     </ul>
   </div>
 </div>

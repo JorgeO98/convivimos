@@ -1,7 +1,6 @@
 <?php
 
-use App\Livewire\dashborad;
-use App\Livewire\Inicio;
+use App\Livewire\ObjetosComunes;
 use App\Livewire\ZonasComunes;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 Route::get('zonas-comunes', ZonasComunes::class)->name('zonas-comunes')->middleware(['auth']);
+Route::get('objetos-comunes', ObjetosComunes::class)->name('objetos-comunes')->middleware(['auth']);
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

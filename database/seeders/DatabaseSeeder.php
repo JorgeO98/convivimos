@@ -16,22 +16,22 @@ class DatabaseSeeder extends Seeder
   public function run(): void
   {
     //Datos de inicialización
-    /*         DB::table('roles')->insertGetId([
-            'rol' => 'admin_propiedad',
-            'desc_rol' => 'Administrador de la propiedad horizontal',
-        ]);
+    DB::table('roles')->insertGetId([
+      'rol' => 'admin_propiedad',
+      'desc_rol' => 'Administrador de la propiedad horizontal',
+    ]);
 
-        $rol = DB::table('roles')->insertGetId([
-            'rol' => 'residente',
-            'desc_rol' => 'Residente de la propiedad horizontal',
-        ]);
-
-        DB::table('users')->insert([
-            'name' => 'Jorge Osorio',
-            'email' => 'jorgearmanbolivar'.'@hotmail.com',
-            'rol_id' => $rol,
-            'password'=>''
-        ]); */
+    $rol = DB::table('roles')->insertGetId([
+      'rol' => 'residente',
+      'desc_rol' => 'Residente de la propiedad horizontal',
+    ]);
+    
+    DB::table('users')->insert([
+      'name' => 'Jorge Osorio',
+      'email' => 'jorgearmanbolivar' . '@hotmail.com',
+      'rol_id' => $rol,
+      'password' => ''
+    ]);
 
     DB::table('zonas_comunes')->insert([
       'nombre' => 'Piscina',
